@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Priyash Personal website</title>
+    <link rel="icon" type="image/png" href="images/Product.png"> <!--this is for the favicon image coming on the tab-->
+</head>
+<body>
+    
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+        
+        <!--for overlay of page so that content will load and then page will be visible-->
+        <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: white; z-index: 1000;"></div>
+        
+        
+        
+        <!--navbar section container-->
+
+        <div class="navbar">
+            <!--this is for the left of the navbar-->
+            <img class="logo" src="images/logo.jpg" />
+            <div class="nav-text priyash" >Priyash Namdeo   </div>
+            <div class="nav-text description">Ex-Product Intern @GroMo || Junior at IIT Delhi || Startup, Business & Tech enthusiast</div>
+            
+            <!--this is for the mobile view-->
+            <button class="nav-text hamburger-menu">☰</button>
+            <div class="nav-links">
+                <!-- Navigation Links Here and i have to see its working separately-->
+                <a href=#about>About</a>
+                <a href=#experience>Experience</a>
+                <a href=#project>Project</a>
+                <a href=#skill>Skills</a>
+                <a href="#blog">Blogs</a>
+                <a href=#connect> Connect with Me</a>
+            </div>
+            
+            
+            <!--now from here this is all about the desktop site-->
+            <!--this is for the left of the navbar-->
+            <div class="nav-text anchor about"><a href=#about>About</a></div>
+            <div class="nav-text anchor experience"><a href=#experience>Experience</a></div>
+            <div class="nav-text anchor project"><a href=#project>Project</a></div>
+            <div class="anchor skill"><a href=#skill>Skills</a></div>
+            <div class="anchor blog"><a href="#blog">Blogs</a></div>
+            <div class="anchor connect"><a href=#connect> Connect with Me</a></div>
+                
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--hero section container-->
+        <div class="hero-section">
+            
+            <div class="blackbackground"></div>
+            
+            <div class="orangedesign-desktopsvg" >
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="desktop-svg">
+                    <path d="M0 100 C20,70 10,50 15,20 S50,0 30,0 L100,0 100,100 0,100 Z"></path>
+                </svg>
+                <img class="priyash-cover" src="images/priyash.png" />
+            </div>
+
+            <div class="orangedesign-mobilesvg" >
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="mobile-svg">
+                    <path d="M0 100 C40,90 60,80 75,60 S95,10 100,0 L100,100 0,100 Z"></path>
+                </svg>
+                <img class="priyash-mobilecover" src="images/priyash-mobile.png" />
+            </div>
+            
+
+            <div class="cover-text" >
+                <div class="text1" >Hello, I am Priyash.</div>
+                <div class="text2" >Welcome to my personal website where I share my work, experience, and knowledge. 
+                    Explore my portfolio and discover the projects I'm currently working on.</div>
+            </div>
+
+            <button class="explore" onclick="location.href='#about';">
+                <div class="explore-btn">Explore</div>
+            </button>
+
+        </div>
+
+
+
+        <!-- About me section container-->
+
+        <div id="about" class="about-section">
+            <img class="about-img" src="images/About.png" />
+            
+            <div class="about-text" >
+                <div class="text1" >About me...</div>
+                <div class="text2" >I am a third-year B-Tech student at IIT Delhi with prior experience as a Product Intern at GroMo. I have cracked JEE Adv. & landed at IIT Delhi with a self study of just one year. My areas of interest include Business, Technology, and Startups, particularly the impact of entrepreneurship on society through the organization of unstructured markets and the introduction of innovative products. I'm proficient in prompt engineering and have a comprehensive understanding of cutting-edge technologies such as Gen-AI. 
+                    Moreover, I excel in managing B2C and D2C products and am proficient in various processes including product planning, design, strategy development, marketing, sales, and leveraging AI tools for organizational growth. Additionally, I am equipped with traits such as risk-taking ability, leadership, time management, and effective communication. My skill set includes Product Management, Front end Development, Market Research, Digital Marketing, Social Media Management, Customer Analytics, and more.</div>
+            </div>
+            
+        </div>
+
+
+        <!-- current section container-->
+        <div class="current-section" >
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#F59E37" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 5 
+                        C25 0, 25 15, 50 0
+                        C75 0, 75 15, 100 0 
+                        L100 100
+                        C75 100, 75 85, 50 100
+                        C25 100, 25 85, 0 100
+                        Z"/>
+            </svg>
+
+            
+
+            <div class="current-content">
+                
+                <div class="current-text">
+                    <div class="text1">Currently working on...</div>
+                    <div class="text2">I am currently working on a project focused on creating a platform designed to assist individuals in maintaining 
+                        their health and fitness, as well as addressing their long-term illnesses through zero cost natural remedial solutions.</div>
+                
+                    <a href="https://priyashx7.github.io/naturfit.ai/" target="_blank">   
+                        <button id="website" class="website-btn">
+                            <div class="text">Visit Website</div>
+                        </button>
+                    </a> 
+
+                    <button id="app" class="app-btn" onclick="showAlert()">
+                        <div class="text">Install App</div>
+                    </button>
+                </div>
+
+                
+                <img class="current-img" src="images/Current Project.jpeg" />
+                
+            </div>
+
+        </div>
+
+
+
+        <!--experience section container-->
+         
+        <div id="experience" class="experience-section">
+            
+            <div class="experience-text">
+                <div class="text1">Corporate Experience</div>
+                <div class="text2">I have served as a Product Intern at GroMo, where I honed my product management skills and gained a comprehensive understanding of the role of a product manager. 
+                    I collaborated with the team to identify and validate problems, and effectively transform solutions from concept to implementation, always with a strategic, business-oriented mindset.
+                </div>
+            </div>
+
+            <img class="experience-img" src="images/experience.png" />
+            <!-- for the experince page. this is embeded with the link and styled as a button-->
+            <a href="experience.html" class="experience-btn">Know More Experience</a> 
+            
+        </div>
+        
+        
+
+
+        <!--project section container-->
+
+        <div id="project" class="project-section">
+            
+            
+            <div class="project-content">
+                <div class="text1">Projects</div>
+                <div class="text2">Leadership, Strategic Thinking, Designing and Innovation</div>
+                <div class="text3">Showcasing My Skills</div>
+                
+                <div class="project1" >
+                    <div class="text">Zomato | Ready to cook meal kit service</div>
+                    <a href="https://docs.google.com/presentation/d/16nYNVIeCW0lgWZJe18xDACTSJsIfrR4GWaC-XBYuxqM/edit?usp=sharing" target="_blank" class="link">View Project ></a>
+                    <img class="project1-img" src="images/zomato project.png" />
+                </div>
+                
+                <div class="project2" >
+                    <a href="https://docs.google.com/presentation/d/1wjZC_OdRWZyMZW0Xs1gWH7yaxLjLEJGkKmlERqCUYX8/edit?usp=sharing" target="_blank" class="link" >View Project ></a>
+                    <div class="text" >ICICI Bank | Gen AI integrated Personalised Financial Advisory Platform</div>
+                    <img class="project2-img" src="images/ICICI project.png" />
+                </div>
+
+                <div class="project3" >
+                    <a href="https://docs.google.com/document/d/1CnnxZK0yZQp0U4pd78orpmS2QtcsksBhvwQlzBPu_9w/edit?usp=sharing" target="_blank" class="link">View Project ></a>
+                    <div class="text">Revamping the complete education journey of Customers on GroMo app.</div>
+                    <img class="project3-img" src="images/GroMo.png" />
+                </div>
+
+                <!--project page-->
+                <a href="project.html" class="project-btn">View More</a> 
+                
+            </div>
+        </div>
+
+
+
+        <!--skill section container-->
+        <div id="skill" class="skill-section">
+            
+            <div class="text">Skills</div>
+            
+            <div class="left-skill">
+                
+                <div class="product">
+                    <div class="product-text"><span class="heading">Product Management: </span><span class="subtext">Skilled in overseeing the entire product lifecycle, from concept to launch. Proficient in agile engineering, ensuring efficient and timely product development.</span></div>
+                    <img class="product-img" src="images/Product.png" />
+                </div>
+    
+                <div class="analytics">
+                    <img class="analytics-img" src="images/analytics.png" />
+                    <div class="analytics-text"><span class="heading">Analysis and Research:</span><span class="subtext"> Proficient in wireframing, conducting detailed analysis, and thorough customer research. Ensures products not only meet technological standards but also effectively address user needs.
+              </span></div>
+                </div>
+            
+                
+                <div class="designing" >
+                    <img class="designing-img" src="images/UI UX.png" />
+                    <div class="designing-text"><span class="heading">Designing:</span><span class="subtext"> Demonstrates a creative approach to crafting seamless user experiences. Skilled in tools like Figma for designing intuitive and visually appealing interfaces.</span></div>
+                </div>
+    
+
+                <div class="market">
+                    <img class="market-img" src="images/market.png" />
+                    <div class="market-text"><span class="heading">Marketing Expertise:</span><span class="subtext"> Well-versed in digital marketing strategies and social media management. Proficient in leveraging tools like Moengage and MS Excel for data-driven marketing decisions.
+              </span></div>
+                </div>
+
+            </div>
+
+            <!--right side skill container-->
+            <div class="right-skill">
+                
+                <div class="tech">
+                    <img class="tech-img" src="images/TECH.png" />
+                    <div class="tech-text"><span class="heading">Tech Proficiency:</span><span class="subtext"> Experienced in both frontend and backend development, with a comprehensive understanding of product development. Proficient in languages such as C++, Python, HTML, CSS, and Javascript. Extensive knowledge of MySQL for robust database management.
+              </span></div>
+                </div>
+    
+                <div class="entrepreneurship">
+                    <img class="entrepreneurship-img" src="images/entrepreneurship.png" />
+                    <div class="entrepreneurship-text"><span class="heading">Entrepreneurial Skills:</span><span class="subtext"> Demonstrates exceptional communication, leadership, and business acumen. Natural aptitude for strategic thinking, effective leadership, and fostering a business-oriented mindset.
+              </span></div>
+                </div>
+    
+            
+                <div class="deeptech" >
+                    <img class="deeptech-img" src="images/deep tech.png" />
+                    <div class="deeptech-text"><span class="heading">Deep Tech Knowledge:</span><span class="subtext"> Experienced in generative AI and other cutting-edge development processes. Stays informed of the latest advancements in technology and incorporates them into product development.</span></div>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+
+
+
+
+
+
+
+        <!--blog section-->
+        <div id="blog" class="blog-section">
+                    
+
+            <div class="text1">Blog</div>
+            <div class="text2">My blogs</div>
+            
+            
+            <div class="blog1">
+                <img class="blog-cover-img" src="images/Frontend.png" />
+                <div class="blog-heading">Frontend, Backend & Database Unveiled</div>
+                <div class="blog-subtext">In today’s interconnected digital world, APIs (Application Programming Interfaces) play .......</div>
+                <img class="blog-logo-img" src="images/logo.jpg" />
+                <div class="blog-author">Priyash</div>
+                <div class="blog-time">29 Dec 2023  |   3 min read</div>
+            </div>
+            
+            
+            <div class="blog2">
+                <img class="blog-cover-img" src="images/API.jpg" />
+                <div class="blog-heading">Demystifying APIs: Unlocking the Power of Interconnectedness</div>
+                <div class="blog-subtext">In today’s interconnected digital world, APIs (Application Programming Interfaces) play .......</div>
+                <img class="blog-logo-img" src="images/logo.jpg" />
+                <div class="blog-author">Priyash</div>
+                <div class="blog-time">25 Jul 2023  |   6 min read</div>
+            </div>
+
+            <div class="blog3">
+                <img class="blog-cover-img" src="images/Gen-AI.jpg" />
+                <div class="blog-heading">Unleashing the Power of Generative AI: Transforming Industries and Paving the Way for a Bright Future</div>
+                <div class="blog-subtext">In the realm of artificial intelligence, Generative AI stands out as a groundbreaking technology .......</div>
+                <img class="blog-logo-img" src="images/logo.jpg" />
+                <div class="blog-author">Priyash</div>
+                <div class="blog-time">11 Jul 2023  |   3 min read</div>
+            </div>
+
+
+            <a href="https://medium.com/@priyashnamdeo" target="_blank" class="blog-btn">
+                View More
+            </a>
+
+        </div>
+
+
+        
+        <!--connect section-->
+        <div id="connect" class="connect-section">
+            <!--connect section background-->
+            <div class="background" ></div>
+            
+            <!--connect section container-->
+            <div class="connect-content">
+                <!--connect section content-->
+                <div class="text1" >Connect</div>
+                <div class="text2">Get in Touch</div>
+                <div class="text3">I would love to hear from you. Feel free to reach out to me through any of the following channels.</div>
+                
+                <!-- may change the idea to keep-->
+                <div class="bottom-nav">
+                    <div class="bottom-nav1"><a href="#about">About</a></div>
+                    <div class="bottom-nav2"><a href="#project">Project</a></div>
+                    <div class="bottom-nav3"><a href="#blog">Blogs</a></div>
+                    <div class="bottom-nav4"><a href="#skill">Skills</a></div>
+                    <div class="bottom-nav5"><a href="#experience">Experience</a></div>
+                </div>
+                
+                <!--right content-->
+                <div class="address">
+                    <div class="text1">Address</div>
+                    <div class="text2">IIT Delhi campus, Hauz Khas, South Delhi, Delhi, India (110016)</div>
+                    <img class="address-img"  src="images/address.jpg" />
+                </div>
+                <div class="email">
+                    <div class="text1">Email:</div>
+                    <div class="text2" >priyash.iitd@gmail.com</div>
+                    <img class="email-img" src="images/mail.jpg" />
+                </div>
+                <div class="phone">
+                    <div class="text1">Phone</div>
+                    <div class="text2">+91-8305791500</div>
+                    <img class="phone-img"  src="images/phone.jpg" />
+                </div>
+
+                <!--insta and linkedin images-->
+                <a href="https://www.instagram.com/priyash_rarity/" target="_blank">
+                    <img class="insta" src="images/instagram.jpeg" />
+                </a>
+                <a href="https://www.linkedin.com/in/priyash-namdeo-870ab3223" target="_blank">
+                    <img class="linkedin" src="images/linkedin.jpeg" />
+                </a>
+            </div>
+        </div>
+
+<!--internal javacript-->
+        <script>
+            function showAlert() {
+                alert('This will be available soon.');
+            }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.title {
+    top: 30px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.back {
+    text-decoration: none; left: 5%; top: 35px; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.corporate {
+    width: 90%; max-width:1200px; height: 341px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; display: flex; justify-content: center; align-items: center;
+}
+.gromo {
+    width: 90%; height: 70%; position: relative; display: flex; justify-content: center;
+}
+.gromo .text1 {
+    margin-right: 79%; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.gromo .text2 {
+    margin-left: 80%; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.gromo .text3 {
+    width: 100%; margin-left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.college {
+    width: 90%; max-width: 1200px; height: 800px; margin-top: 70px; margin-bottom: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; 
+}
+.edc {
+    width: 90%; height: 180px; left: 5%; top: 70px; position: relative; display: flex; justify-content: center; 
+}
+.edc .text1 {
+    margin-right: 35%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.edc .text2 {
+    margin-left: 75%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.edc .text3 {
+    width: 100%; margin-left: 0px; top: 55px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.becon {
+    width: 90%; height: 160px; left: 5%; top: 100px; position: relative; display: flex; justify-content: center; 
+}
+.becon .text1 {
+    margin-right: 35%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.becon .text2 {
+    margin-left: 80%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.becon .text3 {
+    width: 100%; left: 0px; top: 55px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.tryst {
+    width: 90%; height: 140px; left: 5%; top: 130px; position: relative; display: flex; justify-content: center; 
+}
+.tryst .text1 {
+    margin-right: 50%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.tryst .text2 {
+    margin-left: 70%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.tryst .text3 {
+    width: 100%; left: 0px; top: 55px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.rdv {
+    width: 90%; height: 100px; left: 5%; top: 130px; position: relative; display: flex; justify-content: center; 
+}
+.rdv .text1 {
+    margin-right: 42%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.rdv .text2 {
+    margin-left: 80%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.rdv .text3 {
+    width: 100%; left: 0px; top: 55px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+
+
+/* now this is for the mobile screens */
+@media only screen and (max-width: 768px) {
+
+    .title {
+        top: 20px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .back {
+        display: none;
+    }
+    .corporate {
+        width: 90%; max-width: 1200px; height: 550px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; display: flex; justify-content: center; align-items: center;
+    }
+    .gromo {
+        width: 90%; height: 70%; left: 5%; top: 10%; position: absolute; display: flex; justify-content: center;
+    }
+    .gromo .text1 {
+        height: 20px; margin-right: 0%; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .gromo .text2 {
+        height: 16px; height: 16px; top: 10%; margin-left: 0%; position: relative; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .gromo .text3 {
+        width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .college {
+        width: 90%; max-width: 1200px; height: 1350px; margin-top: 70px; margin-bottom: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; 
+    }
+    .edc {
+        width: 90%; height: 180px; left: 5%; top: 50px; position: relative; display: flex; justify-content: center; 
+    }
+    .edc .text1 {
+        margin-right: 0%; text-align: center; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .edc .text2 {
+        margin-left: 0%; top: 45%; position: relative; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .edc .text3 {
+        width: 100%; margin-left: 0px; top: 130px; position: absolute; text-align: justify; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .becon {
+        width: 90%; height: 180px; left: 5%; top: 320px; position: relative; display: flex; justify-content: center; 
+    }
+    .becon .text1 {
+        margin-right: 0%; text-align: center; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .becon .text2 {
+        margin-left: 0%; top: 37%; position: relative; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .becon .text3 {
+        width: 100%; margin-left: 0px; top: 120px; position: absolute; text-align: justify; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .tryst {
+        width: 90%; height: 180px; left: 5%; top: 480px; position: relative; display: flex; justify-content: center; 
+    }
+    .tryst .text1 {
+        margin-right: 0%; text-align: center; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .tryst .text2 {
+        margin-left: 0%; top: 35%; position: relative; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .tryst .text3 {
+        width: 100%; margin-left: 0px; top: 120px; position: absolute; text-align: justify; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }    
+    .rdv {
+        width: 90%; height: 180px; left: 5%; top: 570px; position: relative; display: flex; justify-content: center; 
+    }
+    .rdv .text1 {
+        margin-right: 0%; text-align: center; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .rdv .text2 {
+        margin-left: 0%; top: 45%; position: relative; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .rdv .text3 {
+        width: 100%; margin-left: 0px; top: 130px; position: absolute; text-align: justify; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+
+}
+
+
+
+
+@media only screen and ((min-width: 769px) and (max-width: 1200px)) {
+
+    
+    .title {
+        top: 30px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .back {
+        text-decoration: none; left: 5%; top: 35px; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .corporate {
+        width: 90%; max-width:1200px; height: 341px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; display: flex; justify-content: center; align-items: center;
+    }
+    .gromo {
+        width: 90%; height: 70%; position: relative; display: flex; justify-content: center;
+    }
+    .gromo .text1 {
+        margin-right: 67%; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .gromo .text2 {
+        margin-left: 60%; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .gromo .text3 {
+        width: 100%; margin-left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .college {
+        width: 90%; max-width: 1200px; height: 900px; margin-top: 70px; margin-bottom: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; 
+    }
+    .edc {
+        width: 90%; height: 200px; left: 5%; top: 70px; position: relative; display: flex; justify-content: center; 
+    }
+    .edc .text1 {
+        margin-right: 35%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .edc .text2 {
+        margin-left: 65%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .edc .text3 {
+        width: 100%; margin-left: 0px; top: 70px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .becon {
+        width: 90%; height: 160px; left: 5%; top: 140px; position: relative; display: flex; justify-content: center; 
+    }
+    .becon .text1 {
+        margin-right: 35%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .becon .text2 {
+        margin-left: 80%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .becon .text3 {
+        width: 100%; left: 0px; top: 70px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .tryst {
+        width: 90%; height: 140px; left: 5%; top: 200px; position: relative; display: flex; justify-content: center; 
+    }
+    .tryst .text1 {
+        margin-right: 50%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .tryst .text2 {
+        margin-left: 60%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .tryst .text3 {
+        width: 100%; left: 0px; top: 70px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .rdv {
+        width: 90%; height: 100px; left: 5%; top: 250px; position: relative; display: flex; justify-content: center; 
+    }
+    .rdv .text1 {
+        margin-right: 42%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .rdv .text2 {
+        margin-left: 80%; top: 0px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .rdv .text3 {
+        width: 100%; left: 0px; top: 70px; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+
+
+}

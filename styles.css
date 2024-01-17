@@ -1,0 +1,1725 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* this is all for the navbar section*/
+/* Default navbar style */
+.navbar {
+    width: 100%; height: 46px; left: 0%; top: 0px; position: fixed; z-index: 1;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* ... other styles ... */
+    transition: transform 0.5s ease-in-out, background-color 0.5s;
+}
+/* styles for the navbar content*/
+.navbar .logo {
+    width: 40px; height: 40px; left: 5%; top: 4px; position: absolute; border-radius: 9999px;
+}
+.priyash {
+    left: 10%; top: 5px; position: absolute; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.description {
+    left: 10%; top: 29px; position: absolute; font-size: 10px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+
+/* this is for the mobile view items */
+.hamburger-menu {
+    display: none;
+}
+.nav-links {
+    display: none;
+}
+
+/* this is again for the desktop view */
+.navbar .about {
+    width: 47px; right: 48%;
+}
+.navbar .experience {
+    width: 86px; right: 37%;
+}
+.navbar .project {
+    width: 55px; right: 29%;
+}
+.navbar .skill {
+    width: 41px; right: 22%; color: black;
+}
+.navbar .blog {
+    width: 44px; right: 14%; color: black;
+}
+.navbar .connect {
+    width: 120px; right: 1.5%; color: black;
+}
+/* Styles for navbar when scrolled */
+.navbar.scrolled {
+    background-color: white; /* New background color */
+}
+/* Default text style inside navbar. this extra class is assigned to all the left side texts so that they could have the white color at the home screen and ca also go through transition in 0.3s*/
+.nav-text {
+    color: white; /* Or any default color */
+    transition: color 0.3s;
+}
+/* this extra style for all the right side texts which are in the orange background */
+.anchor {
+    top: 12px; position: absolute; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.anchor a{
+    text-decoration: none;
+    color: black;
+}
+/* I'm not know but when i rearabge it before .anchor and after .nav-text the left side texts will gets completely black and not stay white at the desired place*/
+.nav-text a{
+    text-decoration: none;
+    color: white;
+}
+/* Text style when scrolled */
+.navbar.scrolled .anchor a {
+    color: black; /* New text color */
+}
+.navbar.scrolled .nav-text{
+    color: black;
+}
+.navbar-hidden {
+    transform: translateY(-100%); /* Move the navbar out of view */
+    transition: transform 0.3s ease-in-out;
+}
+/* now making the hovering effect  */
+.anchor a:hover{
+    font-size: 16px;
+}
+
+
+
+/* now working on the hero section container. here for the items to come over the cover design i used  tehe absolute positioning  */
+
+
+/* this is for the container which holds th ecomplete hero section*/
+.hero-section {
+    width: 100%; height: 100vh; position: absolute;
+}
+/* for black background */
+.blackbackground {
+    width: 100%; height: 100vh; left: 0px; top: 0px; position: absolute; background: black;
+}
+/* this is the orange design curve container */
+.orangedesign-desktopsvg {
+    width: 35%; height: 100vh; right: 0px; top: 0px; position: absolute;
+}
+.desktop-svg {
+    width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; fill: #F59E37;
+}
+
+.orangedesign-mobilesvg{
+    display: none;
+}
+
+/* this have the priyash photo over the design*/
+.priyash-cover {
+    width: 45%; height: 74.7%; left: 23%; bottom: 0px; position: absolute;
+}
+/* this is for the texts shown on the home design */
+.cover-text {
+    width: 35%; height: 25%; left: 10%; top: 35%; position:absolute;
+}
+.cover-text .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: white; 
+    font-size: 3.5vw; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.cover-text .text2 {
+    width: 100%; left: 0px; top: 40%; position: absolute; color: white; font-size: 1.2vw;
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+
+/* this is for the explore button*/
+.explore {
+    width: 10%; height: 5%; left: 10%; top: 60%; position: absolute; border: none; 
+    background: #F59E37; border-radius: 10px; display: flex; justify-content: center;
+}
+.explore-btn {
+    text-align: center; top: 20%; position: absolute; color: black; font-size: 2.3vh; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.explore:hover {
+    background: #e8b473; cursor: pointer;
+}
+
+
+
+/* now for the about section*/
+
+.about-section {
+    width: 86%; left: 7%; height: 294px; position: absolute; display: flex; justify-content: space-around;
+}
+.about-img {
+    width: 286.57px; height: 294px; position: relative;
+}
+.about-text {
+    width: 650px; height: 100%; position: relative;
+}
+.about-text .text1 {
+    left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.about-text .text2 {
+    width: 650px; right: 0%; top: 71px; position: absolute; text-align: justify; color: black; 
+    font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+}
+
+
+/* now for the current section */
+
+.current-section {
+    width: 100%; height: 495px; left: 0%; position: absolute;
+}
+.current-content {
+    width: 90%; height: 294px; left: 5%; top: 125px; position: absolute;
+}
+.current-text {
+    width: 512px; height: 294px; top: 30px; right: 50%; position: absolute; display: flex; justify-content: center;
+}
+.current-text .text1 {
+    left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.current-text .text2 {
+    width: 512px; left: 0px; top: 69px; position: absolute; text-align: justify; color: black;
+    font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.website-btn {
+    width: 120px; height: 35px; top: 200px; position: relative; background: white; margin-right: 5%;
+    border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+}
+.website-btn .text {
+    text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.website-btn:hover {
+    background: rgb(59, 234, 59);
+    cursor: pointer;
+}
+.app-btn {
+    width: 120px; height: 35px; top: 200px; position: relative; background: white; margin-left: 5%;
+    border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+}
+.app-btn .text {
+    text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.app-btn:hover {
+    background: rgb(59, 234, 59);
+    cursor: pointer;
+}
+.current-img {
+    width: 458.54px; height: 294px; left: 55%; top: 0px; position: absolute;
+}
+
+
+.experience-section {
+    width: 90%; height: 340px; left: 5%; position: absolute; display: flex; justify-content: center;
+}
+.experience-text {
+    width: 490px; height: 100%; left: 55%; top: 30px; position: absolute;
+}
+.experience-text .text1 {
+    left: 0%; top: 0px; position: absolute; color: black; font-size: 30px;
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.experience-text .text2 {
+    width: 100%; height: 95px; right: 0%; top: 102px; position: absolute; text-align: justify; color: black;
+    font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+}
+.experience-img {
+    width: 538.33px; height: 340px; margin-right: 50%; top: 0px; position: absolute;
+}
+
+.experience-btn {
+    width: 181px; height: 47px; margin-left: 30%; top: 283px; position: relative; background: white; border: 1px black solid; 
+    display: flex; justify-content: center; align-items: center; color: black; font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: none;
+}
+.experience-btn:hover {
+    background-color: #F59E37;
+}
+
+
+/* now from here it is for the project section */
+
+.project-section {
+    width: 100%; height: 845px; position: absolute; background: #F59E37;
+}
+.project-content {
+    width: 90%; height: 741px; left: 5%; top: 32px; position: absolute; display: flex; justify-content: center;
+}
+.project-content .text1 {
+    text-align: center; top: 0px; position: absolute; color: black; font-size: 14px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.project-content .text2 {
+    text-align: center; top: 108px; position: absolute; color: black; font-size: 14px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.project-content .text3 {
+    text-align: center; top: 46px; position: absolute; color: black; font-size: 30px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+
+.project1 {
+    width: 30%; height: 449px; left: 0%; top: 187px; position: absolute; 
+    background: white; border-radius: 10px; border: 1px black solid;
+}
+.project1 .link {
+    height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px;
+    font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+}
+.project1 .text {
+    width: 86%; left: 7%; top: 314px; height: 18px; position: absolute; text-align: 
+    justify; color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+}
+.project1-img {
+    width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 11.42px; border: 1.14px black solid;
+}
+
+.project2 {
+    width: 30%; height: 449px; left: 35%; top: 187px; position: absolute; 
+    background: white; border-radius: 10px; border: 1px black solid;
+}
+.project2 .link {
+    height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px; 
+    font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+}
+.project2 .text {
+    width: 86%; left: 7%; top: 303px; height: 18px; position: absolute; text-align: justify; 
+    color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+}
+.project2-img {
+    width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid"
+}
+
+.project3 {
+    width: 30%; height: 449px; left: 70%; top: 187px; position: absolute; 
+    background: white; border-radius: 10px; border: 1px black solid;
+}
+.project3 .link {
+    height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px; 
+    font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+}
+.project3 .text {
+    width: 86%; left: 7%; top: 302px; height: 18px; position: absolute; text-align: justify; color: black; 
+    font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+}
+.project3-img {
+    width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid;
+}
+
+.project-btn {
+    width: 158px;
+    height: 35px;
+    top: 706px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F59E37;
+    border: 1px black solid;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    text-decoration: none;
+}
+.project-btn:hover {
+    background-color: #ffffff; /* New background color on hover */
+}
+
+
+
+/* now from here the styling is all about of skill section */
+
+.skill-section {
+    width: 90%; height: 573px; left: 5%; position: absolute; display: flex; justify-content: center; align-items: center;
+}
+.skill-section .text {
+    text-align: center; top: 0px; position: absolute; color: black; font-size: 30px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.left-skill {
+    width: 536px; height: 434px; top: 139px; right:50%; position: absolute;
+}
+
+.product {
+    width: 500px; height: 60px; left: 0%; top: 0px; position: absolute;
+}
+.product-img {
+    width: 56px; height: 56px; left: 0px; top: 0px; position: absolute;
+}
+.product-text {
+    width: 410px; left: 70px; top: 0px; text-align: justify; position: absolute;
+}
+/* this is for styling the headig and the normal text for stating the skill */
+.heading {
+    color: black; font-size: 15px; font-family: Open Sans; font-weight: 700; word-wrap: break-word;
+}
+.subtext {
+    color: black; font-size: 15px; font-family: Open Sans; font-weight: 400; word-wrap: break-word;
+}
+
+.analytics {
+    width: 536px; height: 80px; left: 2px; top: 104px; position: absolute;
+}
+.analytics-img {
+    width: 56px; height: 56px; left: 0px; top: 0px; position: absolute;
+}
+.analytics-text {
+    width: 410px; left: 70px; top: 0px; text-align: justify; position: absolute;
+}
+
+.designing {
+    width: 502px; height: 60px; left: 0px; top: 242px; position: absolute;
+}
+.designing-img {
+    width: 60px; height: 44px; left: 0px; top: 0px; position: absolute;
+}
+.designing-text {
+    width: 410px; left: 72px; top: 0px; text-align: justify; position: absolute;
+}
+
+.market {
+    width: 500px; height: 60px; left: 8px; top: 360px; position: absolute;
+}
+.market-img {
+    width: 44px; height: 44px; left: 0px; top: 0px; position: absolute;
+}
+.market-text {
+    width: 410px; left: 64px; top: 0px; text-align: justify; position: absolute;
+}
+
+
+.right-skill {
+    width: 549px; height: 434px; left: 55%; top: 139px; position: absolute;
+}
+
+.tech {
+    width: 549px; height: 100px; right: 0%; top: 0px; position: absolute;
+}
+.tech-img {
+    width: 71px; height: 53.77px; left: 0px; top: 0px; position: absolute;
+}
+.tech-text {
+    width: 410px; left: 83px; top: 0px; text-align: justify; position: absolute;
+}
+
+.entrepreneurship {
+    width: 549px; height: 80px; right: 0%; top: 331px; position: absolute;
+}
+.entrepreneurship-img {
+    width: 56px; height: 56px; left: 13px; top: 0px; position: absolute; 
+}
+.entrepreneurship-text {
+    width: 410px; left: 83px; top: 0px; text-align: justify; position: absolute;
+}
+
+.deeptech {
+    width: 528px; height: 80px; right: 0%; top: 176px; position: absolute;
+}
+.deeptech-img {
+    width: 35px; height: 56.03px; left: 0px; top: 0px; position: absolute;
+}
+.deeptech-text {
+    width: 410px; left: 62px; top: 0px; text-align: justify; position: absolute;
+}
+
+
+
+/* now the styling is for the blog section */
+
+.blog-section {
+    width: 90%; height: 711px; left: 5%; position: absolute; display: flex; justify-content: center;
+}
+.blog-section .text1 {
+    text-align: center; top: 0px; position: absolute; color: black; 
+    font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.blog-section .text2 {
+    text-align: center; top: 46px; position: absolute; color: black; 
+    font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+
+.blog1 {
+    width: 30%; height: 454px; left: 0px; top: 137px; position: absolute;
+}
+.blog-cover-img {
+    width: 100%; height: 200px; left: 0px; top: 0px; position: absolute;
+}
+.blog-heading {
+    width: 100%; left: 0px; top: 251px; position: absolute; color: black; 
+    font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.blog-subtext {
+    width: 100%; left: 0px; top: 333px; position: absolute; color: black; 
+    font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.blog-logo-img {
+    width: 40px; height: 40px; left: 0px; top: 414px; position: absolute; border-radius: 9999px;
+}
+.blog-author {
+    left: 59px; top: 419px; position: absolute; color: black; font-size: 12px; 
+    font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.blog-time {
+    left: 59px; top: 439px; position: absolute; color: rgba(0, 0, 0, 0.60);
+    font-size: 10px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.blog2 {
+    width: 30%; height: 454px; left: 35%; top: 137px; position: absolute;
+}
+.blog3 {
+    width: 30%; height: 454px; left: 70%; top: 137px; position: absolute;
+}
+
+.blog-btn {
+    width: 158px;
+    height: 35px;
+    top: 676px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px black solid;
+    color: black;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    text-decoration: none;
+}
+.blog-btn:hover {
+    background-color: #F59E37; /* New background color on hover */
+}
+
+
+/* now the styling is for the connect section */
+.connect-section {
+    width: 100%; height: 473px; position: absolute;
+}
+.connect-section .background {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: black;
+}
+.connect-content {
+    width: 80%; height: 255px; left: 4%; top: 20%; position: absolute;
+}
+.connect-content .text1 {
+    left: 0px; top: 0px; position: absolute; color: white;
+    font-size: 15px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.connect-content .text2 {
+    left: 0px; top: 48px; position: absolute; color: white; 
+    font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.connect-content .text3 {
+    width: 447px; left: 7px; top: 102px; position: absolute; color: white; 
+    font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+
+.insta {
+    width: 30px; height: 30px; left: 114px; top: 160px; position: absolute; border-radius: 6.65px;
+}
+.linkedin {
+    width: 30px; height: 30px; left: 191px; top: 160px; position: absolute; border-radius: 12.36px;
+}
+
+.bottom-nav {
+    width: 40%; height: 18px; left: 0%; top: 237px; position: absolute;
+}
+
+.bottom-nav1 {
+    width: 47px; left: 0px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+    font-weight: 700; word-wrap: break-word; color: white;
+}
+.bottom-nav2 {
+    width: 55px; left: 255px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+    font-weight: 700; word-wrap: break-word; color: white;
+}
+.bottom-nav3 {
+    width: 44px; left: 472px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+    font-weight: 700; word-wrap: break-word; color: white;
+}
+.bottom-nav4 {
+    width: 41px; left: 372px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+    font-weight: 700; word-wrap: break-word; color: white;
+}
+.bottom-nav5 {
+    width: 86px; left: 108px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+    font-weight: 700; word-wrap: break-word; color: white;
+}
+/* inside the bottom nav upper class the a tag can directly be accessesed */
+.bottom-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.address {
+    width: 413px; height: 38px; left: 71%; top: 204px; position: absolute;
+}
+.address .text1 {
+    left: 56px; top: 0px; position: absolute; color: white; font-size: 15px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.address .text2 {
+    left: 56px; top: 23px; position: absolute; color: white; font-size: 12px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.address-img {
+    width: 20px; height: 33.21px; left: 0px; top: 1px; position: absolute
+}
+.email {
+    width: 201px; height: 38px; left: 70%; top: 36px; position: absolute;
+}
+.email .text1 {
+    left: 67px; top: 0px; position: absolute; color: white; font-size: 15px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.email .text2 {
+    left: 67px; top: 23px; position: absolute; color: white; font-size: 12px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.email-img {
+    width: 41.76px; height: 31px; left: 0px; top: 4px; position: absolute;
+}
+.phone {
+    width: 165px; height: 38px; left: 70%; top: 117px; position: absolute;
+}
+.phone .text1 {
+    left: 64px; top: 0px; position: absolute; color: white; font-size: 15px; 
+    font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.phone .text2 {
+    left: 64px; top: 23px; position: absolute; color: white; font-size: 12px; 
+    font-family: Inter; font-weight: 500; word-wrap: break-word;
+}
+.phone-img {
+    width: 36.30px; height: 36px; left: 0px; top: 2px; position: absolute;
+}
+
+
+/* for mobile screens */
+
+@media only screen and (max-width: 768px) {
+    
+
+    .navbar {
+        width: 100vw; height: 42px; left: 0%; top: 0px; position: fixed; z-index: 1;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease-in-out, background-color 0.5s;
+    }
+    .navbar .logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 9999px;
+        position: absolute;
+        left: 5px;
+    }
+    .priyash {
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 700;
+        left: 50px;
+        top: 15px;
+        word-wrap: break-word;
+    }
+    .description {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block; /* Visible on mobile */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        position: absolute;
+        right: 8px;
+        z-index: 1000;
+    }
+    .nav-links {
+        display: none;
+        margin-top: 44px;
+        margin-left: 70%;
+        padding: 10px;
+        width: 30%; /* or a specific width */
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        margin-left: -10px;
+        color: white;
+        padding: 15px 10px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .active.nav-links {
+        display: block;
+        margin-top: 62px;
+        /* Additional styles when menu is active */
+    }
+
+
+    /* this is doing to make the navbar items designed for the desktop view will get hide for mobile view*/
+    .navbar .about {
+        display: none;
+    }
+    .navbar .experience {
+        display: none;
+    }
+    .navbar .project {
+        display: none;
+    }
+    .navbar .skill {
+        display: none;
+    }
+    .navbar .blog {
+        display: none;
+    }
+    .navbar .connect {
+        display: none;
+    }
+
+
+/* this is for adding functionality on the navbar as done for the desktop navigation bar */
+    .navbar.scrolled {
+        background-color: white; /* New background color */
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+    }
+    .navbar.scrolled .nav-text{
+        color: black;
+    }
+    .navbar-hidden {
+        transform: translateY(-100%); /* Move the navbar out of view */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    
+    .orangedesign-desktopsvg {
+        display: none;
+    }
+    .orangedesign-mobilesvg{
+        display: block;
+        width: 100%; height: 100vh;
+        left: 0px; top: 0px; position: absolute;
+    }
+    .mobile-svg {
+        width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; fill: #F59E37;
+
+    }
+    .priyash-mobilecover {
+        width: 53%; height: 36%; bottom: 0px; right: 0px; position: absolute;
+    }
+
+
+    .cover-text {
+        width: 70%; height: 25%; left: 10%; top: 25%; position:absolute;
+    }
+    .cover-text .text1 {
+        width: 100%; left: 0px; top: 0%; position: absolute; color: white; 
+        font-size: 5.5vw; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .cover-text .text2 {
+        width: 100%; left: 0px; top: 75%; position: absolute; color: white; font-size: 3.2vw;
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+
+    .explore {
+        width: 22%; height: 4%; left: 10%; top: 75%; position: absolute; border: none; 
+        background: #F59E37; border-radius: 10px; display: flex; justify-content: center;
+    }
+    .explore-btn {
+        text-align: center; top: 20%; position: absolute; color: black; font-size: 2.2vh; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+
+    /* now for the about section*/
+
+    .about-section {
+        width: 90%; left: 5%; height: 750px; position: absolute;
+    }
+    
+    .about-text {
+        width: 100%; height: 300px; top: 0px; position: absolute;
+    }
+    .about-text .text1 {
+        left: 0px; top: 0px; height: 20px; position: absolute; color: black; font-size: 24px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .about-text .text2 {
+        width: 100%; left: 0%; top: 50px; position: absolute; text-align: justify; color: black; 
+        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    }
+    .about-img {
+        width: 286.57px; height: 294px; top: 450px;  position: relative;
+    }
+    
+    
+    /* now for the current section */
+
+    .current-section {
+        width: 100%; height: 650px; left: 0%; position: absolute;
+    }
+    .current-content {
+        width: 90%; height: 450px; left: 5%; top: 100px; position: absolute; display: flex; justify-content: space-around;
+    }
+    .current-text {
+        width: 100%; height: 150px; top: 0px; left: 0px; position: absolute; display: flex; justify-content:center;
+    }
+    .current-text .text1 {
+        left: 0px; height: 20px; top: 0px; position: absolute; color: black; font-size: 24px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .current-text .text2 {
+        width: 100%; left: 0px; top: 69px; position: absolute; text-align: justify; color: black;
+        font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .website-btn {
+        width: 100px; height: 35px; top: 400px; position: relative; background: white; margin-right: 5%;
+        border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+    }
+    .website-btn .text {
+        text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    } 
+    .app-btn {
+        width: 100px; height: 35px; top: 400px; position: relative; background: white; margin-left: 5%;
+        border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+    }
+    .app-btn .text {
+        text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    
+    .current-img {
+        width: 284px; height: 182px; left: 0px; top: 170px; position: relative;
+    }
+
+
+
+    .experience-section {
+        width: 90%; height: 500px; left: 5%; position: absolute; display: flex; justify-content: center;
+    }
+    .experience-text {
+        width: 100%; height: 400px; left: 0px; top: 0px; position: absolute;
+    }
+    .experience-text .text1 {
+        left: 0%; top: 0px; height: 20px; position: absolute; color: black; font-size: 24px;
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .experience-text .text2 {
+        width: 100%; height: 120px; right: 0%; top: 50px; position: absolute; text-align: justify; color: black;
+        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    }
+    .experience-img {
+        width: 284px; height: 179px; margin-right: 0%; top: 180px; position: absolute;
+    }
+    .experience-btn {
+        width: 181px; height: 47px; margin-left: 0%; top: 400px; position: absolute; background: white; border: 1px black solid; 
+        display: flex; justify-content: center; align-items: center; color: black; font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: none;
+    }
+    
+
+        
+    /* now from here it is for the project section */
+
+    .project-section {
+        width: 100%; height: 1460px; position: absolute; background: #F59E37;
+    }
+    .project-content {
+        width: 90%; height: 1800px; left: 5%; top: 30px; position: absolute; display: flex; justify-content: center;
+    }
+    .project-content .text1 {
+        text-align: center; top: 0px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .project-content .text2 {
+        text-align: center; top: 78px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .project-content .text3 {
+        text-align: center; top: 36px; position: absolute; color: black; font-size: 24px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+
+
+    .project1 {
+        width: 90%; height: 350px; left: 5%; top: 150px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project1 .link {
+        height: 15px; left: 20px; top: 300px; position: absolute; color: black; font-size: 15px;
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project1 .text {
+        width: 86%; left: 7%; top: 234px; height: 18px; position: absolute; text-align: 
+        justify; color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project1-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 11.42px; border: 1.14px black solid;
+    }
+
+    .project2 {
+        width: 90%; height: 370px; left: 5%; top: 520px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project2 .link {
+        height: 15px; left: 20px; top: 335px; position: absolute; color: black; font-size: 15px; 
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project2 .text {
+        width: 86%; left: 7%; top: 244px; height: 18px; position: absolute; text-align: justify; 
+        color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project2-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid"
+    }
+
+    .project3 {
+        width: 90%; height: 390px; left: 5%; top: 910px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project3 .link {
+        height: 15px; left: 20px; top: 345px; position: absolute; color: black; font-size: 15px; 
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project3 .text {
+        width: 86%; left: 7%; top:250px; height: 18px; position: absolute; text-align: justify; color: black; 
+        font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project3-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid;
+    }
+
+    .project-btn {
+        width: 158px;
+        height: 35px;
+        top: 1350px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F59E37;
+        border: 1px black solid;
+        border-radius: 15px;
+        color: black;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+
+
+
+
+    /* now from here the styling is all about of skill section */
+
+    .skill-section {
+        width: 90%; height: 1300px; left: 5%; position: absolute; display: flex; justify-content: center; align-items: center;
+    }
+    .skill-section .text {
+        text-align: center; top: 0px; position: absolute; color: black; font-size: 24px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .left-skill {
+        width: 100%; height: 650px; top: 70px; right:0%; position: absolute; display: flex; justify-content: center;
+    }
+
+    .product {
+        width: 100%; height: 130px; left: 0%; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .product-img {
+        width: 56px; height: 56px; top: 0px; position: relative;
+    }
+    .product-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute; 
+    }
+    /* this is for styling the headig and the normal text for stating the skill */
+    .heading {
+        color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .subtext {
+        color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+
+    .analytics {
+        width: 100%; height: 150px; left: 0px; top: 170px; position: absolute; display: flex; justify-content: center;
+    }
+    .analytics-img {
+        width: 56px; height: 56px; top: 0px; position: relative;
+    }
+    .analytics-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .designing {
+        width: 100%; height: 130px; left: 0px; top: 360px; position: absolute; display: flex; justify-content: center;
+    }
+    .designing-img {
+        width: 60px; height: 44px; top: 0px; position: relative;
+    }
+    .designing-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .market {
+        width: 100%; height: 130px; left: 0px; top: 530px; position: absolute; display: flex; justify-content: center;
+    }
+    .market-img {
+        width: 44px; height: 44px; top: 0px; position: relative;
+    }
+    .market-text {
+        width: 100%; left: 0px; height: 70px; top: 70px; text-align: justify; position: absolute;
+    }
+
+
+    .right-skill {
+        width: 100%; height: 540px; left: 0%; top: 780px; position: absolute; display: flex; justify-content: center;
+    }
+
+    .tech {
+        width: 100%; height: 170px; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .tech-img {
+        width: 71px; height: 53.77px; top: 0px; position: relative;
+    }
+    .tech-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .entrepreneurship {
+        width: 100%; height: 160px; top: 400px; position: absolute; display: flex; justify-content: center;
+    }
+    .entrepreneurship-img {
+        width: 56px; height: 56px; top: 0px; position: relative; 
+    }
+    .entrepreneurship-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .deeptech {
+        width: 100%; height: 150px; top: 210px; position: absolute; display: flex; justify-content: center;
+    }
+    .deeptech-img {
+        width: 35px; height: 56.03px; top: 0px; position: relative;
+    }
+    .deeptech-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+
+
+    /* now the styling is for the blog section */
+
+    .blog-section {
+        width: 90%; height: 1400px; left: 5%; position: absolute; display: flex; justify-content: center;
+    }
+    .blog-section .text1 {
+        text-align: center; top: 0px; position: absolute; color: black; 
+        font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .blog-section .text2 {
+        text-align: center; top: 30px; position: absolute; color: black; 
+        font-size: 24px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+
+
+
+    .blog1 {
+        width: 100%; height: 404px; left: 0px; top: 137px; position: absolute;
+    }
+    .blog-cover-img {
+        width: 100%; height: 200px; left: 0px; top: 0px; position: absolute;
+    }
+    .blog-heading {
+        width: 100%; left: 0px; top: 220px; position: absolute; color: black; 
+        font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .blog-subtext {
+        width: 100%; left: 0px; top: 275px; position: absolute; color: black; 
+        font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .blog-logo-img {
+        width: 40px; height: 40px; left: 0px; top: 320px; position: absolute; border-radius: 9999px;
+    }
+    .blog-author {
+        left: 59px; top: 325px; position: absolute; color: black; font-size: 12px; 
+        font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .blog-time {
+        left: 59px; top: 345px; position: absolute; color: rgba(0, 0, 0, 0.60);
+        font-size: 10px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+
+    .blog2 {
+        width: 100%; height: 404px; left: 0%; top: 541px; position: absolute;
+    }
+    .blog3 {
+        width: 100%; height: 404px; left: 0%; top: 945px; position: absolute;
+    }
+
+    .blog-btn {
+        width: 158px;
+        height: 35px;
+        top: 1350px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border: 1px black solid;
+        color: black;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+
+    /* now the styling is for the connect section */
+    .connect-section {
+        width: 100%; height: 400px; position: absolute;
+    }
+    .connect-section .background {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: black;
+    }
+    .connect-content {
+        width: 90%; height: 380px; left: 5%; top: 20px; position: absolute;
+    }
+    .connect-content .text1 {
+        left: 0px; top: 0px; position: absolute; color: white;
+        font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .connect-content .text2 {
+        left: 0px; height: 20px; top: 38px; position: absolute; color: white; 
+        font-size: 24px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .connect-content .text3 {
+        width: 100%; left: 0px; height: 200px;  top: 80px; position: absolute; color: white; 
+        font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+
+    .insta {
+        width: 30px; height: 30px; left: 10%; top: 140px; position: absolute; border-radius: 6.65px;
+    }
+    .linkedin {
+        width: 30px; height: 30px; left: 60%; top: 140px; position: absolute; border-radius: 12.36px;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+
+    .address {
+        width: 100%; height: 38px; left: 5%; top: 304px; position: absolute;
+    }
+    .address .text1 {
+        left: 36px; top: 0px; position: absolute; color: white; font-size: 14px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .address .text2 {
+        left: 36px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .address-img {
+        width: 15px; height: 25px; left: 0px; top: 1px; position: absolute
+    }
+
+
+
+
+    .email {
+        width: 100%; height: 38px; left: 5%; top: 200px; position: absolute;
+    }
+    .email .text1 {
+        left: 40px; top: 0px; position: absolute; color: white; font-size: 14px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .email .text2 {
+        left: 40px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .email-img {
+        width: 20px; height: 20px; left: 0px; top: 4px; position: absolute;
+    }
+
+
+
+
+    .phone {
+        width: 100%; height: 38px; left: 5%; top: 250px; position: absolute;
+    }
+    .phone .text1 {
+        left: 37px; top: 0px; position: absolute; color: white; font-size: 14px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .phone .text2 {
+        left: 37px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .phone-img {
+        width: 20px; height: 20px; left: 0px; top: 2px; position: absolute;
+    }
+
+
+  }
+
+
+@media only screen and ((min-width: 769px) and (max-width: 1200px)) {
+
+
+
+    /* here we will also going to use the hamburger menu as this complete will not be getting accomodated in this. */
+    .navbar {
+        width: 100%; height: 60px; left: 0%; top: 0px; position: fixed; z-index: 1;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease-in-out, background-color 0.5s;
+    }
+    .navbar .logo {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        border-radius: 9999px;
+        position: absolute;
+        left: 10px;
+    }
+    .priyash {
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: 700;
+        left: 70px;
+        top: 18px;
+        word-wrap: break-word;
+    }
+    .description {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block; /* Visible on mobile */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        right: 8px;
+        z-index: 1000;
+    }
+    .nav-links {
+        display: none;
+        margin-top: 44px;
+        margin-left: 70%;
+        padding: 10px;
+        width: 30%; /* or a specific width */
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .nav-links a {
+        display: block;
+        width: 100%;
+        margin-left: -10px;
+        color: white;
+        font-size: 24px;
+        padding: 20px 30px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .active.nav-links {
+        display: block;
+        margin-top: 100px;
+        /* Additional styles when menu is active */
+    }
+
+
+    /* this is doing to make the navbar items designed for the desktop view will get hide for mobile view*/
+    .navbar .about {
+        display: none;
+    }
+    .navbar .experience {
+        display: none;
+    }
+    .navbar .project {
+        display: none;
+    }
+    .navbar .skill {
+        display: none;
+    }
+    .navbar .blog {
+        display: none;
+    }
+    .navbar .connect {
+        display: none;
+    }
+
+
+/* this is for adding functionality on the navbar as done for the desktop navigation bar */
+    .navbar.scrolled {
+        background-color: white; /* New background color */
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+    }
+    .navbar.scrolled .nav-text{
+        color: black;
+    }
+    .navbar-hidden {
+        transform: translateY(-100%); /* Move the navbar out of view */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    
+    .orangedesign-desktopsvg {
+        display: none;
+    }
+    .orangedesign-mobilesvg{
+        display: block;
+        width: 100%; height: 100vh;
+        left: 0px; top: 0px; position: absolute;
+    }
+    .mobile-svg {
+        width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; fill: #F59E37;
+
+    }
+    .priyash-mobilecover {
+        width: 53%; height: 36%; bottom: 0px; right: 0px; position: absolute;
+    }
+
+
+    .cover-text {
+        width: 70%; height: 25%; left: 10%; top: 25%; position:absolute;
+    }
+    .cover-text .text1 {
+        width: 100%; left: 0px; top: 0%; position: absolute; color: white; 
+        font-size: 9.3vw; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .cover-text .text2 {
+        width: 100%; left: 0px; top: 75%; position: absolute; color: white; font-size: 2.1vw;
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+
+    .explore {
+        width: 22%; height: 3%; left: 10%; top: 60%; position: absolute; border: none; 
+        background: #F59E37; border-radius: 10px; display: flex; justify-content: center;
+    }
+    .explore-btn {
+        text-align: center; top: 20%; position: absolute; color: black; font-size: 2.2vh; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .explore:hover {
+        background: #e8b473; cursor: pointer;
+    }
+    
+
+    /* now for the about section*/
+
+    .about-section {
+        width: 86%; left: 7%; height: 500px; position: absolute; display: flex; justify-content: space-around; align-items: center;
+    }
+    .about-img {
+        width: 286.57px; height: 294px; position: relative; margin-right: 5%;
+    }
+    .about-text {
+        width: 45%px; height: 100%; position: relative; margin-left: 5%;
+    }
+    .about-text .text1 {
+        left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .about-text .text2 {
+        width: 100%; right: 0%; top: 71px; position: absolute; text-align: justify; color: black; 
+        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    }
+    
+    /* now for the current section */
+
+    .current-section {
+        width: 100%; height: 500px; left: 0%; position: absolute;
+    }
+    .current-content {
+        width: 90%; height: 400px; left: 5%; top: 50px; position: absolute; display: flex; align-items: center; justify-content: center;
+    }
+    .current-text {
+        width: 40%; height: 400px; top: 30px; right: 25%; position: relative; display: flex; justify-content: center;
+    }
+    .current-text .text1 {
+        left: 0px; top: 0px; position: absolute; color: black; font-size: 30px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .current-text .text2 {
+        width: 100%; left: 0px; top: 90px; position: absolute; text-align: justify; color: black;
+        font-size: 14px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .website-btn {
+        width: 120px; height: 35px; top: 250px; position: relative; background: white; margin-right: 5%;
+        border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+    }
+    .website-btn .text {
+        text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .website-btn:hover {
+        background: rgb(59, 234, 59);
+        cursor: pointer;
+    }
+    .app-btn {
+        width: 120px; height: 35px; top: 250px; position: relative; background: white; margin-left: 5%;
+        border-radius: 10px; border: 0.5px; display: flex; justify-content: center;
+    }
+    .app-btn .text {
+        text-align: center; top: 9px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .app-btn:hover {
+        background: rgb(59, 234, 59);
+        cursor: pointer;
+    }
+    .current-img {
+        width: 360px; height: 245px; left: 50%; top: 20%; position: absolute;
+    }
+
+/* now from here we are tlakign about the experiece section */
+    .experience-section {
+        width: 90%; height: 500px; left: 5%; position: absolute; display: flex; justify-content: center; align-items: center;
+    }
+    .experience-text {
+        width: 45%; height: 500px; left: 55%; top: 100px; position: absolute;
+    }
+    .experience-text .text1 {
+        left: 0%; top: 0px; position: absolute; color: black; font-size: 30px;
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .experience-text .text2 {
+        width: 100%; height: 180px; right: 0%; top: 90px; position: absolute; text-align: justify; color: black;
+        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    }
+    .experience-img {
+        width: 340px; height: 250px; margin-right: 55%; top: 120px; position: absolute;
+    }
+    .experience-btn {
+        width: 181px; height: 47px; margin-left: 52%; top: 350px; position: absolute; background: white; border: 1px black solid; 
+        display: flex; justify-content: center; align-items: center; color: black; font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: none;
+    }
+
+
+    /* now from here it is for the project section */
+
+    .project-section {
+        width: 100%; height: 1350px; position: absolute; background: #F59E37;
+    }
+    .project-content {
+        width: 90%; height: 1300px; left: 5%; top: 32px; position: absolute; display: flex; justify-content: space-around; align-items: center;
+    }
+    .project-content .text1 {
+        text-align: center; top: 0px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .project-content .text2 {
+        text-align: center; top: 108px; position: absolute; color: black; font-size: 14px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .project-content .text3 {
+        text-align: center; top: 46px; position: absolute; color: black; font-size: 30px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+
+
+    .project1 {
+        width: 45%; height: 449px; left: 0%; top: 187px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project1 .link {
+        height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px;
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project1 .text {
+        width: 86%; left: 7%; top: 314px; height: 18px; position: absolute; text-align: 
+        justify; color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project1-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 11.42px; border: 1.14px black solid;
+    }
+
+    .project2 {
+        width: 45%; height: 449px; left: 55%; top: 187px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project2 .link {
+        height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px; 
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project2 .text {
+        width: 86%; left: 7%; top: 303px; height: 18px; position: absolute; text-align: justify; 
+        color: black; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project2-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid"
+    }
+
+    .project3 {
+        width: 45%; height: 449px; left: 27.5%; top: 687px; position: absolute; 
+        background: white; border-radius: 10px; border: 1px black solid;
+    }
+    .project3 .link {
+        height: 15px; left: 40px; top: 399px; position: absolute; color: black; font-size: 15px; 
+        font-family: Inter; font-weight: 400; word-wrap: break-word; text-decoration: none;
+    }
+    .project3 .text {
+        width: 86%; left: 7%; top: 302px; height: 18px; position: absolute; text-align: justify; color: black; 
+        font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word;
+    }
+    .project3-img {
+        width: 90%; height: 60%; left: 5%; top: 8px; position: absolute; border-radius: 10px; border: 1px black solid;
+    }
+
+    .project-btn {
+        width: 158px;
+        height: 35px;
+        top: 1206px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F59E37;
+        border: 1px black solid;
+        border-radius: 15px;
+        color: black;
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .project-btn:hover {
+        background-color: #ffffff; /* New background color on hover */
+    }
+
+
+
+
+
+    /* now from here the styling is all about of skill section */
+
+    .skill-section {
+        width: 90%; height: 750px; left: 5%; position: absolute; display: flex; justify-content: center; align-items: center;
+    }
+    .skill-section .text {
+        text-align: center; top: 0px; position: absolute; color: black; font-size: 20px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .left-skill {
+        width: 100%; height: 300px; top: 70px; right:0%; position: absolute; display: flex; justify-content: space-around;
+    }
+
+    .product {
+        width: 45%; height: 180px; left: 0%; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .product-img {
+        width: 56px; height: 56px; top: 0px; position: relative;
+    }
+    .product-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute; 
+    }
+    /* this is for styling the headig and the normal text for stating the skill */
+    .heading {
+        color: black; font-size: 12px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .subtext {
+        color: black; font-size: 10px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+
+    .analytics {
+        width: 45%; height: 150px; left: 55%; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .analytics-img {
+        width: 56px; height: 56px; top: 0px; position: relative;
+    }
+    .analytics-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .designing {
+        width: 45%; height: 130px; left: 0px; top: 160px; position: absolute; display: flex; justify-content: center;
+    }
+    .designing-img {
+        width: 60px; height: 44px; top: 0px; position: relative;
+    }
+    .designing-text {
+        width: 100%; left: 0px; height: 60px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .market {
+        width: 45%; height: 130px; left: 55%; top: 160px; position: absolute; display: flex; justify-content: center;
+    }
+    .market-img {
+        width: 44px; height: 44px; top: 0px; position: relative;
+    }
+    .market-text {
+        width: 100%; left: 0px; height: 70px; top: 70px; text-align: justify; position: absolute;
+    }
+
+
+    .right-skill {
+        width: 100%; height: 300px; left: 0%; top: 400px; position: absolute; display: flex; justify-content: space-around;
+    }
+
+    .tech {
+        width: 45%; height: 170px; left: 0px; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .tech-img {
+        width: 71px; height: 53.77px; top: 0px; position: relative;
+    }
+    .tech-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .entrepreneurship {
+        width: 45%; height: 160px; left: 55%; top: 0px; position: absolute; display: flex; justify-content: center;
+    }
+    .entrepreneurship-img {
+        width: 56px; height: 56px; top: 0px; position: relative; 
+    }
+    .entrepreneurship-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+    .deeptech {
+        width: 45%; height: 150px; left: 0%; top: 160px; position: absolute; display: flex; justify-content: center;
+    }
+    .deeptech-img {
+        width: 35px; height: 56.03px; top: 0px; position: relative;
+    }
+    .deeptech-text {
+        width: 100%; left: 0px; top: 70px; text-align: justify; position: absolute;
+    }
+
+
+    /* the blog setion seems to be good in the tablet as like th desktop view therefore I'mnot changing it. */
+
+
+    /* now i will change the styling of the connect section */
+
+    /* now the styling is for the connect section */
+    .connect-section {
+        width: 100%; height: 473px; position: absolute;
+    }
+    .connect-section .background {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: black;
+    }
+    .connect-content {
+        width: 90%; height: 255px; left: 4%; top: 20%; position: absolute;
+    }
+    .connect-content .text1 {
+        left: 0px; top: 0px; position: absolute; color: white;
+        font-size: 15px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .connect-content .text2 {
+        left: 0px; top: 48px; position: absolute; color: white; 
+        font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .connect-content .text3 {
+        width: 447px; left: 7px; top: 102px; position: absolute; color: white; 
+        font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+
+    .insta {
+        width: 30px; height: 30px; left: 114px; top: 160px; position: absolute; border-radius: 6.65px;
+    }
+    .linkedin {
+        width: 30px; height: 30px; left: 191px; top: 160px; position: absolute; border-radius: 12.36px;
+    }
+
+    .bottom-nav {
+        width: 40%; height: 18px; left: 0%; top: 237px; position: absolute;
+    }
+
+    .bottom-nav1 {
+        width: 47px; left: 0px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+        font-weight: 700; word-wrap: break-word; color: white;
+    }
+    .bottom-nav2 {
+        width: 55px; left: 200px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+        font-weight: 700; word-wrap: break-word; color: white;
+    }
+    .bottom-nav3 {
+        width: 44px; left: 362px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+        font-weight: 700; word-wrap: break-word; color: white;
+    }
+    .bottom-nav4 {
+        width: 41px; left: 290px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+        font-weight: 700; word-wrap: break-word; color: white;
+    }
+    .bottom-nav5 {
+        width: 86px; left: 80px; top: 0px; position: absolute; font-size: 15px; font-family: Inter; 
+        font-weight: 700; word-wrap: break-word; color: white;
+    }
+    /* inside the bottom nav upper class the a tag can directly be accessesed */
+    .bottom-nav a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .address {
+        width: 250px; height: 38px; left: 66%; top: 204px; position: absolute;
+    }
+    .address .text1 {
+        left: 56px; top: 0px; position: absolute; color: white; font-size: 15px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .address .text2 {
+        left: 56px; width: 200px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .address-img {
+        width: 20px; height: 33.21px; left: 0px; top: 1px; position: absolute
+    }
+    .email {
+        width: 201px; height: 38px; left: 65%; top: 36px; position: absolute;
+    }
+    .email .text1 {
+        left: 67px; top: 0px; position: absolute; color: white; font-size: 15px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .email .text2 {
+        left: 67px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .email-img {
+        width: 41.76px; height: 31px; left: 0px; top: 4px; position: absolute;
+    }
+    .phone {
+        width: 165px; height: 38px; left: 65%; top: 117px; position: absolute;
+    }
+    .phone .text1 {
+        left: 64px; top: 0px; position: absolute; color: white; font-size: 15px; 
+        font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .phone .text2 {
+        left: 64px; top: 23px; position: absolute; color: white; font-size: 12px; 
+        font-family: Inter; font-weight: 500; word-wrap: break-word;
+    }
+    .phone-img {
+        width: 36.30px; height: 36px; left: 0px; top: 2px; position: absolute;
+    }
+
+
+}

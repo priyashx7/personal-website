@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* for desktop view */
+.project-heading {
+    top: 30px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.back-link {
+    text-decoration: none; left: 5%; top: 35px; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.zomato {
+    width: 90%; height: 341px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.zomato .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.zomato .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.zomato-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.zomato .content {
+    width: 50%; height: 80%; left: 45%; top: 10%; position: absolute;
+}
+.zomato .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.zomato .content .text2 {
+    width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.zomato .content .link {
+    width: 100%; left: 0px; bottom: 0%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+
+.icici {
+    width: 90%; height: 341px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.icici .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.icici .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.icici-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.icici .content {
+    width: 50%; height: 80%; left: 45%; top: 10%; position: absolute;
+}
+.icici .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.icici .content .text2 {
+    width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.icici .content .link {
+    width: 100%; left: 0px; bottom: 0%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+
+
+.gromo {
+    width: 90%; height: 400px; margin-top: 70px; margin-bottom: 50px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.gromo .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.gromo .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.gromo-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.gromo .content {
+    width: 50%; height: 80%; left: 45%; top: 10%; position: absolute;
+}
+.gromo .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.gromo .content .text2 {
+    width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word"
+}
+.gromo .content .link {
+    width: 100%; left: 0px; bottom: 0%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .project-heading {
+        top: 30px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }  
+    .back-link {
+        display: none;
+    }
+    .zomato {
+        width: 90%; height: 650px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px; display: flex; justify-content: center;
+    }
+    .zomato .img-container {
+        width: 70%; height: 180px; right: 15%; top: 30px; position: absolute;
+    }
+    .zomato .img-frame {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+    }
+    .zomato-img {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+    }
+    .zomato .content {
+        width: 80%; height: 300px; left: 0%; top: 240px; position: relative; text-align: center;
+    }
+    .zomato .content .text1 {
+        width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .zomato .content .text2 {
+        width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .zomato .content .link {
+        width: 100%; left: 0px; bottom: -10%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+    }
+    
+    .icici {
+        width: 90%; height: 750px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;  display: flex; justify-content: center;
+    }
+    .icici .img-container {
+        width: 70%; height: 180px; right: 15%; top: 30px; position: absolute;
+    }
+    .icici .img-frame {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+    }
+    .icici-img {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+    }
+    .icici .content {
+        width: 80%; height: 300px; left: 0%; top: 240px; position: relative; text-align: center;
+    }
+    .icici .content .text1 {
+        width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .icici .content .text2 {
+        width: 100%; left: 0px; top: 30%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+    }
+    .icici .content .link {
+        width: 100%; left: 0px; bottom: -50%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+    }
+    
+    
+    .gromo {
+        width: 90%; height: 900px; margin-top: 70px; margin-bottom: 50px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;  display: flex; justify-content: center;
+    }
+    .gromo .img-container {
+        width: 70%; height: 180px; right: 15%; top: 30px; position: absolute;
+    }
+    .gromo .img-frame {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+    }
+    .gromo-img {
+        width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+    }
+    .gromo .content {
+        width: 80%; height: 500px; left: 0%; top: 240px; position: relative; text-align: center;
+    }
+    .gromo .content .text1 {
+        width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .gromo .content .text2 {
+        width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word"
+    }
+    .gromo .content .link {
+        width: 100%; left: 0px; bottom: -23%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+    }
+    
+
+}
+
+
+
+@media only screen and ((min-width: 769px) and (max-width: 1200px)) {
+
+    
+.project-heading {
+    top: 30px; position: relative; color: black; font-size: 25px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.back-link {
+    text-decoration: none; left: 5%; top: 35px; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+
+.zomato {
+    width: 90%; height: 341px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.zomato .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.zomato .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.zomato-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.zomato .content {
+    width: 50%; height: 80%; left: 45%; top: 10%; position: absolute;
+}
+.zomato .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.zomato .content .text2 {
+    width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.zomato .content .link {
+    width: 100%; left: 0px; bottom: 0%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+.icici {
+    width: 90%; height: 400px; margin-top: 70px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.icici .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.icici .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.icici-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.icici .content {
+    width: 50%; height: 80%; left: 45%; top: 10%; position: absolute;
+}
+.icici .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.icici .content .text2 {
+    width: 100%; left: 0px; top: 20%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word;
+}
+.icici .content .link {
+    width: 100%; left: 0px; bottom: 0%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+
+
+.gromo {
+    width: 90%; height: 500px; margin-top: 70px; margin-bottom: 50px; position: relative; background: rgba(244.73, 157.64, 55.40, 0.30); border-radius: 10px;
+}
+.gromo .img-container {
+    width: 30%; height: 80%; right: 65%; top: 10%; position: absolute;
+}
+.gromo .img-frame {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; background: white; border-radius: 11.07px;
+}
+.gromo-img {
+    width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; border-radius: 11.07px;
+}
+.gromo .content {
+    width: 50%; height: 80%; left: 45%; top: 5%; position: absolute;
+}
+.gromo .content .text1 {
+    width: 100%; left: 0px; top: 0%; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+}
+.gromo .content .text2 {
+    width: 100%; left: 0px; top: 15%; position: absolute; text-align: justify; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word"
+}
+.gromo .content .link {
+    width: 100%; left: 0px; bottom: -10%; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-decoration: none;
+}
+
+}
