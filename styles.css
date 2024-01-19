@@ -609,7 +609,7 @@
 
 /* for mobile screens */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     
 
     .navbar {
@@ -1189,7 +1189,7 @@
 
     /* here we will also going to use the hamburger menu as this complete will not be getting accomodated in this. */
     .navbar {
-        width: 100%; height: 60px; left: 0%; top: 0px; position: fixed; z-index: 1;
+        width: 100%; height: 46px; left: 0%; top: 0px; position: fixed; z-index: 1;
         background-color: transparent;
         transition: background-color 0.3s;
         display: flex;
@@ -1197,88 +1197,77 @@
         transition: transform 0.5s ease-in-out, background-color 0.5s;
     }
     .navbar .logo {
-        width: 40px;
-        height: 40px;
-        top: 10px;
+        width: 36px;
+        height: 36px;
+        top: 5px;
         border-radius: 9999px;
         position: absolute;
         left: 10px;
     }
     .priyash {
-        font-size: 25px;
+        font-size: 18px;
         font-family: Inter;
         font-weight: 700;
-        left: 70px;
-        top: 18px;
+        left: 60px;
+        top: 12px;
         word-wrap: break-word;
     }
     .description {
         display: none;
     }
+
+    /* this is for the tablet view items same as in desktop */
     .hamburger-menu {
-        display: block; /* Visible on mobile */
-        background: none;
-        border: none;
-        color: white;
-        font-size: 30px;
-        position: absolute;
-        right: 8px;
-        z-index: 1000;
+        display: none;
     }
     .nav-links {
         display: none;
-        margin-top: 44px;
-        margin-left: 70%;
-        padding: 10px;
-        width: 30%; /* or a specific width */
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-    .nav-links a {
-        display: block;
-        width: 100%;
-        margin-left: -10px;
-        color: white;
-        font-size: 24px;
-        padding: 20px 30px;
-        text-decoration: none;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .active.nav-links {
-        display: block;
-        margin-top: 100px;
-        /* Additional styles when menu is active */
     }
 
-
-    /* this is doing to make the navbar items designed for the desktop view will get hide for mobile view*/
+    /* this is again for the desktop view */
     .navbar .about {
-        display: none;
+        width: 47px; right: 48%;
     }
     .navbar .experience {
-        display: none;
+        width: 86px; right: 36%;
     }
     .navbar .project {
-        display: none;
+        width: 55px; right: 29%;
     }
     .navbar .skill {
-        display: none;
+        width: 41px; right: 22%; color: black;
     }
     .navbar .blog {
-        display: none;
+        width: 44px; right: 16%; color: black;
     }
     .navbar .connect {
-        display: none;
+        width: 120px; right: 1.5%; color: black;
     }
-
-
-/* this is for adding functionality on the navbar as done for the desktop navigation bar */
+    /* Styles for navbar when scrolled */
     .navbar.scrolled {
         background-color: white; /* New background color */
     }
-    .nav-links a{
+    /* Default text style inside navbar. this extra class is assigned to all the left side texts so that they could have the white color at the home screen and ca also go through transition in 0.3s*/
+    .nav-text {
+        color: white; /* Or any default color */
+        transition: color 0.3s;
+    }
+    /* this extra style for all the right side texts which are in the orange background */
+    .anchor {
+        top: 12px; position: absolute; font-size: 15px; font-family: Inter; font-weight: 700; word-wrap: break-word;
+    }
+    .anchor a{
+        text-decoration: none;
+        color: black;
+    }
+    /* I'm not know but when i rearabge it before .anchor and after .nav-text the left side texts will gets completely black and not stay white at the desired place*/
+    .nav-text a{
         text-decoration: none;
         color: white;
+    }
+    /* Text style when scrolled */
+    .navbar.scrolled .anchor a {
+        color: black; /* New text color */
     }
     .navbar.scrolled .nav-text{
         color: black;
@@ -1287,49 +1276,66 @@
         transform: translateY(-100%); /* Move the navbar out of view */
         transition: transform 0.3s ease-in-out;
     }
+    /* now making the hovering effect  */
+    .anchor a:hover{
+        font-size: 16px;
+    }
 
-    
+
+
+    /* now working on the hero section container. here for the items to come over the cover design i used  tehe absolute positioning  */
+
+
+    /* this is for the container which holds th ecomplete hero section*/
+    .hero-section {
+        width: 100%; height: 100vh; position: absolute;
+    }
+    /* for black background */
+    .blackbackground {
+        width: 100%; height: 100vh; left: 0px; top: 0px; position: absolute; background: black;
+    }
+    /* this is the orange design curve container */
     .orangedesign-desktopsvg {
+        width: 35%; height: 100vh; right: 0px; top: 0px; position: absolute;
+    }
+    .desktop-svg {
+        width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; fill: #F59E37;
+    }
+
+    .orangedesign-mobilesvg{
         display: none;
     }
-    .orangedesign-mobilesvg{
-        display: block;
-        width: 100%; height: 100vh;
-        left: 0px; top: 0px; position: absolute;
-    }
-    .mobile-svg {
-        width: 100%; height: 100%; position: absolute; bottom: 0; left: 0; fill: #F59E37;
 
+    /* this have the priyash photo over the design*/
+    .priyash-cover {
+        width: 45%; height: 74.7%; left: 23%; bottom: 0px; position: absolute;
     }
-    .priyash-mobilecover {
-        width: 53%; height: 36%; bottom: 0px; right: 0px; position: absolute;
-    }
-
-
+    /* this is for the texts shown on the home design */
     .cover-text {
-        width: 70%; height: 25%; left: 10%; top: 25%; position:absolute;
+        width: 35%; height: 25%; left: 10%; top: 35%; position:absolute;
     }
     .cover-text .text1 {
         width: 100%; left: 0px; top: 0%; position: absolute; color: white; 
-        font-size: 9.3vw; font-family: Inter; font-weight: 700; word-wrap: break-word;
+        font-size: 3.5vw; font-family: Inter; font-weight: 700; word-wrap: break-word;
     }
     .cover-text .text2 {
-        width: 100%; left: 0px; top: 75%; position: absolute; color: white; font-size: 2.1vw;
+        width: 100%; left: 0px; top: 40%; position: absolute; color: white; font-size: 1.2vw;
         font-family: Inter; font-weight: 500; word-wrap: break-word;
     }
 
+    /* this is for the explore button*/
     .explore {
-        width: 22%; height: 3%; left: 10%; top: 60%; position: absolute; border: none; 
+        width: 10%; height: 5%; left: 10%; top: 60%; position: absolute; border: none; 
         background: #F59E37; border-radius: 10px; display: flex; justify-content: center;
     }
     .explore-btn {
-        text-align: center; top: 20%; position: absolute; color: black; font-size: 2.2vh; 
+        text-align: center; top: 20%; position: absolute; color: black; font-size: 2.3vh; 
         font-family: Inter; font-weight: 500; word-wrap: break-word;
     }
     .explore:hover {
         background: #e8b473; cursor: pointer;
     }
-    
+
 
     /* now for the about section*/
 
