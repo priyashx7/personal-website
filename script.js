@@ -103,5 +103,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     // Once all positioning is done, hide the loading overlay
+    window.onload = function() {
+    // Call adjustSectionPositions
+    adjustSectionPositions();
+
+    // Hide the loading overlay
     document.getElementById('loading-overlay').style.display = 'none';
+    };
+
 });
