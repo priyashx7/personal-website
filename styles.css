@@ -166,7 +166,7 @@
 }
 .about-text .text2 {
     width: 650px; right: 0%; top: 71px; position: absolute; text-align: justify; color: black; 
-    font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
 }
 
 
@@ -230,7 +230,7 @@
 }
 .experience-text .text2 {
     width: 100%; height: 95px; right: 0%; top: 102px; position: absolute; text-align: justify; color: black;
-    font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+    font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
 }
 .experience-img {
     width: 538.33px; height: 340px; margin-right: 50%; top: 0px; position: absolute;
@@ -764,7 +764,7 @@
     }
     .about-text .text2 {
         width: 100%; left: 0%; top: 50px; position: absolute; text-align: justify; color: black; 
-        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+        font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
     }
     .about-img {
         width: 286.57px; height: 294px; top: 450px;  position: relative;
@@ -825,7 +825,7 @@
     }
     .experience-text .text2 {
         width: 100%; height: 120px; right: 0%; top: 50px; position: absolute; text-align: justify; color: black;
-        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+        font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
     }
     .experience-img {
         width: 284px; height: 179px; margin-right: 0%; top: 180px; position: absolute;
@@ -1354,7 +1354,7 @@
     }
     .about-text .text2 {
         width: 100%; right: 0%; top: 71px; position: absolute; text-align: justify; color: black; 
-        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+        font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
     }
     
     /* now for the current section */
@@ -1417,7 +1417,7 @@
     }
     .experience-text .text2 {
         width: 100%; height: 180px; right: 0%; top: 90px; position: absolute; text-align: justify; color: black;
-        font-size: 14px; font-family: Open Sans; font-weight: 600; word-wrap: break-word;
+        font-size: 14px; font-family: Open Sans; font-weight: 500; word-wrap: break-word;
     }
     .experience-img {
         width: 340px; height: 250px; margin-right: 55%; top: 120px; position: absolute;
