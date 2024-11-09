@@ -180,7 +180,7 @@
                 
                 <div class="project1" >
                     <div class="text">Zomato | Ready to cook meal kit service</div>
-                    <a target="_blank" class="link" onclick="alert('This link is not accessible as the website is going to update soon.');">View Project ></a>
+                    <a target="_blank" class="link" onclick="alert('This link is not accessible as the website is going to update soon. For now Please click on View more');">View Project ></a>
                     <img class="project1-img" src="images/zomato project.png" />
                 </div>
                 
@@ -190,11 +190,34 @@
                     <img class="project2-img" src="images/ICICI project.png" />
                 </div>
 
+
+
                 <div class="project3">
-                    <a target="_blank" class="link" onclick="alert('This link is not accessible as the website is going to update soon.');">View Project ></a>
+                    <a class="link" id="viewProjectLink">View Project ></a>
                     <div class="text">Revamping the complete education journey of Customers on GroMo app.</div>
                     <img class="project3-img" src="images/GroMo.png" />
                 </div>
+
+                <!-- Notification div -->
+                <div id="notification" style="display:none; background-color: #4CAF50; color: white; padding: 15px; position: fixed; top: 20px; right: 20px; z-index: 1000;">
+                    You will be redirected in 5 seconds.
+                </div>
+                
+                <script>
+                    document.getElementById('viewProjectLink').addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent the default anchor behavior
+                
+                        // Show a custom notification
+                        var notification = document.getElementById('notification');
+                        notification.style.display = 'block';
+                
+                        // Set a timeout to hide the notification and redirect after 5 seconds
+                        setTimeout(function() {
+                            notification.style.display = 'none';
+                            window.open('https://thin-hunter-98f.notion.site/12953bc5fb4f80cdb3a0efc4a53ecb0e?v=12953bc5fb4f81bb8cf7000c7abca4c6', '_blank'); // Change this to your desired URL
+                        }, 5000); // 5000 milliseconds = 5 seconds
+                    });
+                </script>
 
                 <!--project page-->
                 <a href="project.html" class="project-btn">View More</a> 
